@@ -5,12 +5,10 @@
 
 
 def power_numbers(n):
-    spisok=[]
-    for i in n:
-        k=i**2
-        spisok.append(k)
-    return spisok
-#print(power_numbers([1,2,3]))
+    return n**2
+
+
+print(power_numbers(2))
 
 
 # filter types
