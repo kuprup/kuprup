@@ -5,8 +5,13 @@
 
 
 def power_numbers(n):
-    return n**2
-power_numbers(2)
+    n=[]
+    for i in n:
+        nvkvadrate=i**2
+        n.append(nvkvadrate)
+    return(n)
+
+power_numbers(2,3)
 
 
 
