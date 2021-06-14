@@ -4,13 +4,12 @@
 """
 
 
-def power_numbers():
-    """
-    функция, которая принимает N целых чисел,
-    и возвращает список квадратов этих чисел
-    >>> power_numbers(1, 2, 5, 7)
-    <<< [1, 4, 25, 49]
-    """
+def power_numbers(n):
+    return n**2
+power_numbers(2)
+
+
+
 
 
 # filter types
