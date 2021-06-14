@@ -5,8 +5,12 @@
 
 
 def power_numbers(n):
-    return n**2
-
+    k=[]
+    for i in n:
+        a=i**2
+        k.append(a)
+    return k
+print(power_numbers([1,2,3]))
 
 #rint(power_numbers(2))
 
