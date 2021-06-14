@@ -8,7 +8,7 @@ def power_numbers(n):
     return n**2
 
 
-print(power_numbers(2))
+#rint(power_numbers(2))
 
 
 # filter types
