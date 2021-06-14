@@ -1,6 +1,6 @@
 """
 Домашнее задание №1
-Функции и структуры данных
+Функции и структуры данныхааааа
 """
 
 
@@ -10,7 +10,7 @@ def power_numbers(n):
         k=i**2
         spisok.append(k)
     return spisok
-print(power_numbers([1,2,3]))
+#print(power_numbers([1,2,3]))
 
 
 # filter types
