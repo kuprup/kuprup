@@ -40,4 +40,4 @@ def filter_numbers(numbers, position) :
             if t<=0:
                 a.append(i)
     return a
-print(filter_numbers([0,1,2,3,8,10], "prime"))
+#print(filter_numbers([0,1,2,3,8,10], "prime"))
