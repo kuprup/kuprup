@@ -34,7 +34,7 @@ def filter_numbers(numbers, position) :
                 a.append(i)
     else:
         for i in numbers:
-            for s in range(2,i//2+1):
+            for s in range(2,i-1):
                 if i%s==0:
                     t=+1
             if t<=0:
