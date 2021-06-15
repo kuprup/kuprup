@@ -34,10 +34,10 @@ def filter_numbers(numbers, position) :
                 a.append(i)
     else:
         for i in numbers:
-            for d in range(2,i-1):
-                if i%d==0:
+            for s in range(2,i//2+1):
+                if i%s==0:
                     t=+1
-            if t==0:
+            if t<=>=0:
                 a.append(i)
     return a
-print(filter_numbers([1,2,3,8,10], "prime"))
+print(filter_numbers([0,1,2,3,8,10], "prime"))
