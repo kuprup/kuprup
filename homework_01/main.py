@@ -21,23 +21,23 @@ EVEN = "even"
 PRIME = "prime"
 
 
-def filter_numbers(numbers, position):
+def filter_numbers(numbers, position) :
     a=[]
-    if position='ODD':
+    t=0
+    if position=="odd":
         for i in numbers:
             if i%2==1:
                 a.append(i)
-    elif position='EVEN':
+    elif position=='even':
         for i in numbers:
             if i % 2 == 0:
                 a.append(i)
     else:
         for i in numbers:
-            for d in range(2,i):
-                if i%d!=0:
+            for d in range(2,i-1):
+                if i%d==0:
                     t=+1
-            if t!=0:
-
-
+            if t==0:
+                a.append(i)
     return a
-
+print(filter_numbers([1,2,3,8,10], "prime"))
