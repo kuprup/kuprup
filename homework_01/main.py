@@ -38,9 +38,9 @@ def filter_numbers(numbers, position) :
     else:
         for i in numbers:
             for s in range(2,i+1):
-                if i%s!=0 or i>s:
+                if i%s==0 and i>s:
                     break
-                else:
-                    a.append(i)
+            else:
+                a.append(i)
     return a
-print(filter_numbers([5,0,1,2,3,8,10, 91], "prime"))
+print(filter_numbers([1,2,3,8,10, 91], "prime"))
