@@ -23,7 +23,10 @@ PRIME = "prime"
 
 def filter_numbers(numbers, position) :
     a=[]
+    c=[]
     t=0
+    indx=int
+    numbers.sort()
     if position=="odd":
         for i in numbers:
             if i%2==1:
@@ -34,10 +37,10 @@ def filter_numbers(numbers, position) :
                 a.append(i)
     else:
         for i in numbers:
-            for s in range(2,i-1):
-                if i%s==0:
-                    t=+1
-            if t<=0:
-                a.append(i)
+            for s in range(2,i+1):
+                if i%s!=0 or i>s:
+                    break
+                else:
+                    a.append(i)
     return a
-#print(filter_numbers([0,1,2,3,8,10], "prime"))
+print(filter_numbers([5,0,1,2,3,8,10, 91], "prime"))
