@@ -29,7 +29,7 @@ def filter_numbers(numbers, position) :
     numbers.sort()
     if position=="odd":
         for i in numbers:
-            if i%2==1:
+            if i%2!=0:
                 a.append(i)
     elif position=='even':
         for i in numbers:
@@ -43,4 +43,4 @@ def filter_numbers(numbers, position) :
             else:
                 a.append(i)
     return a
-print(filter_numbers([1,2,3,8,10, 91], "prime"))
+print(filter_numbers([1,2,3,8,10, 91], "odd"))
