@@ -26,7 +26,6 @@ def filter_numbers(numbers, position) :
     c=[]
     t=0
     indx=int
-    numbers.sort()
     if position=="odd":
         for i in numbers:
             if i%2!=0:
@@ -43,4 +42,4 @@ def filter_numbers(numbers, position) :
             else:
                 a.append(i)
     return a
-print(filter_numbers([1,2,3,8,10, 91], "odd"))
+print(filter_numbers([91,1,2,3,8,10, 91], ODD))
