@@ -26,7 +26,7 @@ class Vehicle():
 
 
 
-car=Vehicle(32, 1010, 10)
+#car=Vehicle(32, 1010, 10)
 #print(car)
 
-car.__move__(9100, car.fuel_consumption)
+#car.__move__(91000, car.fuel_consumption)
