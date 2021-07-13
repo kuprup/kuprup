@@ -13,9 +13,7 @@ class Car(Vehicle):
     def __str__(self):
         return f'(weight={self.weight})(Move={self.__start__(self.fuel)})(fuel={self.fuel})(fuel_consumption={self.fuel_consumption} litters for 100 km)(engine={self.__set_engine__()}'
     def __set_engine__(self):
-        a=int(input('set volume'))
-        b=int(input('set pistons'))
-        return Engine(volume=a, pistons=b)
+        return Engine()
 
 print(Car())
 
