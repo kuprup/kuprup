@@ -6,7 +6,7 @@ class Vehicle():
         self.weight = weight
         self.fuel = fuel
         self.fuel_consumption = fuel_consumption
-        self.started = True
+        self.started = False
 
     def __str__(self):
         return f'(weight={self.weight})(Move={self.start(self.fuel)})(fuel={self.fuel})(fuel_consumption={self.fuel_consumption} litters for 100 km)'
