@@ -17,7 +17,7 @@ class Plane(Vehicle):
     def __str__(self):
         return f'{self.weight}fuel={self.fuel}fuelconsumption={self.fuel_consumption}cargo={self.cargo}max_cargo={self.max_cargo}'
 
-    def load_cargo(self, additiona_lcargo):
+    def load_cargo(self, additional_cargo):
         if (self.cargo + additional_cargo) > self.max_cargo:
             raise CargoOverload('You have the overload')
         else:
