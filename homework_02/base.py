@@ -19,10 +19,8 @@ class Vehicle():
                raise LowFuelError('You do not have enough fuel')
 
     def move(self, distance):
-        how_many_can_move = self.fuel*self.fuel_consumption
-        ostatok = self.fuel - distance*self.fuel_consumption
-        if how_many_can_move >= distance:
-            print('You have enough fuel for this distance and you also have ' + str(ostatok) + ' litres')
-        else:
+        if self.fuel<(distance*self.fuel_consumption):
             raise NotEnoughFuel('You do not have enough fuel')
+        else:
+            self.fuel-=(self.fuel_consumption*distance)
 
