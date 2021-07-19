@@ -11,9 +11,9 @@ class Vehicle():
     def __str__(self):
         return f'(weight={self.weight})(Move={self.start(self.fuel)})(fuel={self.fuel})(fuel_consumption={self.fuel_consumption} litters for 100 km)'
 
-    def start(self, fuel):
+    def start(self):
         if not self.started:
-            if fuel > 0:
+            if self.fuel > 0:
                self.started=True
             else:
                raise LowFuelError('You do not have enough fuel')
