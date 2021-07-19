@@ -28,6 +28,3 @@ class Plane(Vehicle):
         print(removed_cargo)
         self.cargo=0
         return removed_cargo
-#print(Plane(5).load_cargo(1))
-#Plane(4).remove_all_cargo()
-#print(Plane(10).remove_all_cargo())

@@ -26,7 +26,3 @@ class Vehicle():
         else:
             raise NotEnoughFuel('You do not have enough fuel')
 
-# car=Vehicle(32, 1010, 10)
-# print(car)
-
-# car.__move__(91000, car.fuel_consumption)

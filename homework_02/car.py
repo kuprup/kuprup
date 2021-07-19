@@ -20,9 +20,3 @@ class Car(Vehicle):
         self.engine = Engine
 
 
-# Car.set_engine(Engine(volume=1, pistons=3))
-# Car(10).set_engine(Engine(volume=1, pistons=1))
-# print(Car(10))
-# print(Engine)
-#Engine = Engine(volume=1,pistons= 2)
-#print(Car(10))
