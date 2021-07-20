@@ -11,7 +11,6 @@ class Car(Vehicle):
         self.fuel = fuel
         self.fuel_consumption = fuel_consumption
         self.started = False
-        self.engine = engine
 
     def __str__(self):
         return f'(weight={self.weight})(Move={self.start(self.fuel)})(fuel={self.fuel})(fuel_consumption={self.fuel_consumption} litters for 100 km)(engine={self.engine})'
