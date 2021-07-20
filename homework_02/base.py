@@ -22,5 +22,5 @@ class Vehicle():
         if self.fuel<(distance*self.fuel_consumption):
             raise NotEnoughFuel('You do not have enough fuel')
         else:
-            self.fuel-=(self.fuel_consumption*distance)
+            self.fuel-=(self.fuel_consumption*distance )
 
