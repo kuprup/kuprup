@@ -16,6 +16,6 @@ class Car(Vehicle):
         return f'(weight={self.weight})(Move={self.start(self.fuel)})(fuel={self.fuel})(fuel_consumption={self.fuel_consumption} litters for 100 km)(engine={self.engine})'
 
     def set_engine(self, engine):
-        Car.engine = engine
+        self.engine = engine
 
 
