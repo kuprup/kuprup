@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/", summary="Get a hello world json")
 def hello(
-    name: str = "NASTYA",
+    name: str = "Semen",
 ):
     """
     Hello world view
@@ -17,3 +17,6 @@ def hello(
     """
     return {"Hello": name}
 
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Optional[str] = None):
+    return {"item_id": item_id, "q": q}
