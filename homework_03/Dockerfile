@@ -6,8 +6,8 @@ RUN pip install poetry
 
 RUN poetry config virtualenvs.create false
 
-COPY ./web-app/pyproject.toml .
-COPY ./web-app/poetry.lock .
+#COPY ./web-app/pyproject.toml .
+#COPY ./web-app/poetry.lock .
 
 RUN poetry install
 
