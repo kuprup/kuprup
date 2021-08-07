@@ -11,7 +11,7 @@ RUN poetry config virtualenvs.create false
 
 RUN poetry install
 
-COPY web-app ./
+#COPY web-app ./
 
 EXPOSE 8000
 
