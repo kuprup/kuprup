@@ -2,16 +2,14 @@ FROM python:3.9-buster
 
 WORKDIR /app
 
-RUN pip install poetry
+RUN pip install pipenv
 
-RUN poetry config virtualenvs.create false
+COPY Pipfile.lock .
+COPY Pipfile .
 
-COPY ./web-app/pyproject.toml .
-COPY ./web-app/poetry.lock .
+RUN pipenv install
 
-RUN poetry install
-
-COPY web-app ./
+COPY . ./
 
 EXPOSE 8000
 
